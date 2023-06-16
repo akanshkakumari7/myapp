@@ -1,10 +1,12 @@
 import React from 'react';
 
 const TaskCard = ({ task, removeTask, editTask }) => {
+
+  // removing task card
   const handleRemove = () => {
     removeTask(task.id);
   };
-
+   // editing task card
   const handleEdit = () => {
     editTask(task);
   };
